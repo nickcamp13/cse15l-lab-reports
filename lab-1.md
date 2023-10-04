@@ -1,24 +1,24 @@
-# Lab Report 1
+# Lab Report 1 "Remote Access and FileSystem"
 
-## cd
-1. **No Args**
+## Command: "cd"
+1. **Used with no args**
    ```
    [user@sahara ~]$ cd
    [user@sahara ~]$ 
    ```
-2. **Path To Directory**
+2. **Used with a path to a directory as an arg**
    ```
    [user@sahara ~]$ cd lecture1
    [user@sahara ~/lecture1]$
    ```
-3. **Path To File**
+3. **Used with a path To file as an arg**
    
-## ls
-1. **No Args**
-2. **Path To Directory**
-3. **Path To File**
+## Command: "ls"
+1. **Used with no args**
+2. **Used with a path to a directory as an arg**
+3. **Used with a path To file as an arg**
    
-## cat
-1. **No Args**
-2. **Path To Directory**
-3. **Path To File**
+## Command: "cat"
+1. **Used with no args**
+2. **Used with a path to a directory as an arg**
+3. **Used with a path To file as an arg**
