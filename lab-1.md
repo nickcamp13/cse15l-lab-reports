@@ -11,8 +11,6 @@
 
 ![FileStructure](lab1-file-structure.png)
 
----
-
 ## Command: "cd"
 1. **Usage w/ no args**
    ```
@@ -100,3 +98,4 @@
    [user@sahara ~]$ cat lecture1/messages/en-us.txt
    Hello World!
    ```
+   Here, I provided the cat command with the path to the en-us.txt file which resulted in the terminal outputting the file's contents. The text inside the file was "Hello World!" so this is exactly was was returned to the terminal. No errors were returned.
