@@ -80,7 +80,7 @@
    ^C
    [user@sahara ~]$
    ```
-   This case resulted in interestig behavior. cat is a command that outputs the complete contents of specified files. In this example I did not provide any file for cat to print out. After calling this command no new prompt was available for me but instead, I was able to continue typing in the terminal. In the line after where I call cat, I typed "test" and hit enter. Afterwards, the terminal responded back with an identical string. I was able to continue this behavior until I terminated the command with hitting ctrl+c. Despite the interesting behavior I do not believe this is an error.
+   My current working directory is the home directory. This case resulted in interestig behavior. cat is a command that outputs the complete contents of specified files. In this example I did not provide any file for cat to print out. After calling this command no new prompt was available for me but instead, I was able to continue typing in the terminal. In the line after where I call cat, I typed "test" and hit enter. Afterwards, the terminal responded back with an identical string. I was able to continue this behavior until I terminated the command with hitting ctrl+c. Despite the interesting behavior I do not believe this is an error.
    
 2. **Usage w/ a path to a directory as an arg**
    ```
@@ -89,7 +89,7 @@
    [user@sahara ~]$ cat lecture1
    cat: lecture1: Is a directory
    ```
-   Since cat is meant to output the contents of a file or more than one file, this example caused the terminal to return an error. I provided the directory lecture1 which exists within my current working directory but since it is not a file the command was unable to print out any text within a file.
+   In this example, the current working directory is home. Since cat is meant to output the contents of a file or more than one file, this example caused the terminal to return an error. I provided the directory lecture1 which exists within my current working directory but since it is not a file the command was unable to print out any text within a file.
    
 3. **Usage w/ a path to a file as an arg**
    ```
@@ -98,4 +98,4 @@
    [user@sahara ~]$ cat lecture1/messages/en-us.txt
    Hello World!
    ```
-   Here, I provided the cat command with the path to the en-us.txt file which resulted in the terminal outputting the file's contents. The text inside the file was "Hello World!" so this is exactly was was returned to the terminal. No errors were returned.
+   Once again, the current working directory is the home folder. Here, I provided the cat command with the path to the en-us.txt file which resulted in the terminal outputting the file's contents. The text inside the file was "Hello World!" so this is exactly was was returned to the terminal. No errors were returned.
