@@ -62,7 +62,7 @@ When I entered this url, my code called the `handleRequest` method. Another func
 
 `handleRequest(URI url)` takes in a URI parameter that is labeled as `url`. `url` is the value of the url that is entered in the search bar. The url I entered into the search bar was `http://localhost:4000/add-message?s=hello world` but after entering it, the url changed to `http://localhost:4000/add-message?s=hello%20world`. The value of the argument passed to `handleRequest` is the former.
 
-`constructString()` takes in no arguments. It is a helper function that constructs the final output to be returned by `handleRequest`.
+`constructString()` takes in no arguments. It is a helper function that constructs the final output to be stored in the  `result` variable that is returned by `handleRequest`. `result` is constructed by iterating through the `messages` ArrayList and adding each String in the ArrayList by utilizing the format method and a String template called `template`.
 
 At the start, before any invocation of `handleRequest`, the server's `Handler` object has an empty ArrayList of Strings called `messages`.
 
@@ -98,9 +98,13 @@ After calling `handleRequest` for the second time, the String value of "you shou
 
 ![private-key](private-key.png)
 
+The private key's file is `id_rsa`. Its path is `~/Users/nickcampos/.ssh/id_rsa`
+
 ### Path to the Public Key (From my account on ieng6)
 
 ![public-key](public-key.png)
+
+The public key's file is `authourized_keys`. Its path is `~/home/linux/ieng6/cs15lfa23/cs15lfa23ag/.ssh/authorized_keys`
 
 ### No Password ieng6
 
